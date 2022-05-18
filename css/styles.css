@@ -1,0 +1,643 @@
+@font-face {
+    font-family: 'Source Sans Pro', cursive;
+    src: url(../fonts/SourceSansPro-Regular.ttf);
+    font-family: 'Bebas Neue', cursive;
+    src: url(../fonts/BebasNeue-Regular.ttf);
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: black;
+}
+
+.grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "nav"
+        "section"
+        "content1"
+        "footer";
+}
+
+/* nav */
+
+nav {
+    grid-area: nav;
+}
+
+.nav-todo {
+    align-items: center;
+    list-style: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.logo-nav {
+    max-width: 40px;
+}
+
+.navbar li {
+    display: inline-block;
+    grid-area: nav;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.navbar li a {
+
+    color: rgb(255, 255, 255);
+    display: block;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', cursive;
+    font-size: 13px;
+    width: 100%;
+}
+
+/*titulos y txt*/
+
+.titulo {
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(255, 255, 255);
+    grid-area: section;
+    font-size: 3em;
+    text-align: center;
+    margin: 25px;
+    letter-spacing: 0.1em;
+}
+
+.subtitulo {
+    font-family: 'Source Sans Pro ExtraLight', sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    letter-spacing: 5px;
+    grid-area: section;
+}
+
+.texto_estudio {
+    font-family: 'Source Sans Pro ExtraLight', sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 15px;
+    grid-area: section;
+}
+
+.subtituloh2 {
+    font-family: 'Source Sans Pro ExtraLight', sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.subtitulofaq {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5rem;
+    letter-spacing: 5px;
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.pregunta h5 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1rem;
+    letter-spacing: 5px;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.respuesta {
+    font-family: 'Source Sans Pro Regular', sans-serif;
+    color: white;
+    text-align: center;
+    margin: 3%;
+}
+
+.respuesta li {
+    list-style: none;
+    margin-bottom: 2%;
+}
+
+/* texto e imagen INDEX */
+
+.infoIndex {
+    display: grid;
+    grid-area: content1;
+}
+
+.img-txt {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10%;
+    font-family: 'Source Sans Pro Regular', sans-serif;
+    color: white;
+}
+
+.img-index {
+    max-width: 50vh;
+    align-items: center;
+    padding: 30px;
+}
+
+/*imagenes ESTUDIO */
+
+.row {
+    padding: 10px;
+    flex-wrap: wrap;
+    grid-area: content1;
+}
+
+.column {
+    padding: 10px;
+    grid-area: content1;
+
+}
+
+.column img {
+    max-width: 100%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4%;
+    grid-area: content1;
+}
+
+/*imagenes TRABAJOS */
+
+.trabajos-row {
+    display: flex;
+    grid-area: content1;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 5%;
+
+}
+
+.trabajos-row img {
+    grid-area: content1;
+    align-items: center;
+    width: 100%;
+    margin: 10px;
+    border-radius: 4%;
+}
+
+
+/* imagen CONTACTAME */
+
+.img-contact img {
+    justify-content: center;
+    max-width: 100%;
+}
+
+/* formulario */
+
+.formu1 {
+    font-family: 'Source Sans Pro Regular', sans-serif;
+    color: white;
+    margin: 70px;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+/*footer*/
+
+footer {
+    grid-area: footer;
+}
+
+.img-footer {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+
+/* tablet */
+
+@media screen and (min-width: 768px) {
+
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "nav nav"
+            "section section"
+            "content1 content1"
+            "footer footer";
+    }
+
+    /*navbar*/
+
+    nav {
+        display: grid;
+        grid-area: nav;
+    }
+
+    .navbar li {
+        display: inline-block;
+        padding-left: 70px;
+        padding-right: 30px;
+    }
+
+    .navbar li a {
+
+        color: rgb(255, 255, 255);
+        display: block;
+        text-decoration: none;
+        font-family: 'Source Sans Pro', cursive;
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .logo-nav {
+        max-width: 4em;
+        margin-top: 15px;
+    }
+
+
+    /*titulos y txt*/
+
+    .titulo {
+        display: grid;
+        grid-area: section;
+        font-family: 'Bebas Neue', cursive;
+        color: rgb(255, 255, 255);
+        grid-area: section;
+        font-size: 3.5em;
+        text-align: center;
+        margin: 35px;
+        letter-spacing: 0.18em;
+    }
+
+    .subtitulo {
+        font-family: 'Source Sans Pro ExtraLight', sans-serif;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        letter-spacing: 5px;
+        grid-area: section;
+    }
+
+    .texto_estudio {
+        font-family: 'Source Sans Pro ExtraLight', sans-serif;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        margin: 15px;
+        padding: 15px;
+        grid-area: section;
+    }
+
+    .subtituloh2 {
+        font-family: 'Source Sans Pro ExtraLight', sans-serif;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        letter-spacing: 5px;
+        font-size: 1.3rem;
+    }
+
+    .pregunta h5 {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 1.5rem;
+        letter-spacing: 5px;
+        text-align: center;
+        color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    /*imagenes INDEX*/
+
+    .img-index {
+        max-width: 100%;
+        align-items: center;
+        justify-content: center;
+        grid-area: content1;
+    }
+
+    .img-txt {
+        text-align: center;
+        margin-top: 10px;
+        padding: 10%;
+        font-family: 'Source Sans Pro Regular', sans-serif;
+        color: white;
+        grid-area: content1;
+    }
+
+    /*imagenes ESTUDIO*/
+
+    .row {
+        padding: 10px;
+        flex-wrap: wrap;
+        grid-area: content1;
+    }
+
+    .column {
+        padding: 10px;
+        grid-area: content1;
+        text-align: center;
+
+    }
+
+    .column img {
+        max-width: 40%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 4%;
+        grid-area: content1;
+    }
+
+    /*imagenes TRABAJOS*/
+
+    .trabajos-row {
+        display: flex;
+        grid-area: content1;
+        align-items: center;
+        flex-wrap: wrap;
+
+
+    }
+
+    .trabajos-row img {
+        grid-area: content1;
+        text-align: center;
+        width: 40%;
+        border-radius: 5%;
+    }
+
+    /*imagen contactame*/
+
+    .img-contact {
+        display: grid;
+        justify-content: center;
+        margin: 100px;
+        max-width: 100%;
+    }
+
+    /*formulario*/
+
+    .formu1 {
+        font-family: 'Source Sans Pro Regular', sans-serif;
+        color: white;
+        margin-right: 50px;
+        margin-left: 220px;
+        justify-content: center;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        grid-area: center;
+        font-size: 1.2em;
+    }
+
+}
+
+/*desktop*/
+
+@media (min-width: 1280px) {
+
+
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "nav nav nav nav"
+            "section section section section"
+            "content1 content1 content 1 content 1"
+            "footer footer footer footer";
+    }
+
+    /*navbar*/
+
+    .navbar {
+        font-family: 'Source Sans Pro', cursive;
+        width: 100%;
+        text-align: center;
+        display: grid;
+        grid-area: nav;
+    }
+
+    .navbar li {
+        display: inline-block;
+    }
+
+    .menu {
+        display: inline-block;
+        float: none;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .logo-nav {
+        width: 70px;
+        height: 100%;
+        margin-top: 10px;
+
+    }
+
+    .navbar li a {
+
+        color: rgb(255, 255, 255);
+        display: block;
+        font-size: 1.1em;
+        height: 50px;
+        letter-spacing: 3px;
+        margin: 20px;
+        padding: 20px;
+        position: relative;
+        text-decoration: none;
+        text-transform: uppercase;
+        align-items: center;
+
+    }
+
+    .navbar li a:hover {
+        color: rgb(145, 24, 24);
+        transition: .8s;
+    }
+
+    /*titulos y txt*/
+
+    .titulo {
+        font-family: 'Bebas Neue', cursive;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 15px;
+        font-size: 5em;
+        letter-spacing: 4px;
+        display: grid;
+        grid-area: section;
+    }
+    
+    .titulo h1:hover {
+        color: rgb(145, 24, 24);
+        transition: .8s;
+    }
+    
+    .subtitulo {
+        font-family: 'Source Sans Pro ExtraLight', sans-serif;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        letter-spacing: 5px;
+        display: grid;
+        grid-area: section;
+    }
+
+    .img-txt {
+        display: flex;
+        grid-area: content1;
+        text-align: center;
+    }
+    
+    .img-txt {
+        display: flex;
+        margin-top: 0px;
+        margin-left: 50px;
+        margin-right: 50px;
+        text-align: center;
+        font-family: 'Source Sans Pro Regular', sans-serif;
+        color: white;
+        grid-area: content1;
+    }
+
+    .texto_estudio {
+        font-family: 'Source Sans Pro Light', sans-serif;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        letter-spacing: 5px;
+    }
+
+    .subtitulofaq {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 2rem;
+        letter-spacing: 5px;
+        text-align: center;
+        color: white;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        grid-area: section;
+    }
+    
+    .pregunta h5 {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 1.8rem;
+        letter-spacing: 5px;
+        text-align: center;
+        color: white;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        grid-area: section;
+    }
+    
+    .respuesta {
+        font-family: 'Source Sans Pro Regular', sans-serif;
+        color: white;
+        text-align: center;
+        margin-left: 500px;
+        margin-right: 500px;
+        grid-area: content1;
+    }
+    
+    .respuesta li {
+        list-style: none;
+        grid-area: content1;
+    }
+
+    /*imagen INDEX*/
+
+    .img-index {
+        display: flex;
+        max-width: 65%;
+        grid-area: content1;
+    }
+    
+    /*imagenes ESTUDIO*/
+
+    .row{
+        display: grid;
+        grid-area: content1;
+    }
+    
+    .column img {
+        max-width: 40%;
+        margin-left: 2%;
+        margin-right: auto;
+        border-radius: 4%;
+    }
+    
+    .hover-column img {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        -webkit-transition: .8s ease-in-out;
+        transition: .5s ease-in-out;
+    }
+    
+    .hover-column:hover img {
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0);
+    }
+
+    /*imagenes TRABAJOS*/
+
+    .trabajos-row {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 50px;
+        margin: 50px;
+    }
+    
+    .trabajos-row img {
+        align-items: center;
+        width: 300px;
+        margin: 10px;
+        border-radius: 4%;
+        box-shadow: 2px 2px 2px 1px rgba(192, 19, 19, 0.215);
+    }
+
+    /*imagen CONTACTAME*/
+
+    .img-contact {
+        display: flex;
+        justify-content: center;
+        margin: 100px;
+        max-width: 37%;
+    }
+
+    /*formulario*/
+
+    .formulario {
+        display: flex;
+    }
+    
+    .formu1 {
+        font-family: 'Source Sans Pro Regular', sans-serif;
+        color: white;
+        display: flex;
+        margin-top: 100px;
+        justify-content: center;
+    }
+
+    footer {
+        margin-top: 25px;
+    }
+
+}
