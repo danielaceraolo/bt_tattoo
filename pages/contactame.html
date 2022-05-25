@@ -7,26 +7,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boulevard Tattoo - Contáctame</title>
     <link rel="icon" type="icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="../css/styles.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
     <div class="container">
         <header>
 
-            <nav class="navbar">
-                <div class="nav-todo">
-                    <ul class="menu">
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="estudioPrivado.html"> Estudio Privado</a></li>
-                        <img class="logo-nav" src="../img/logo.png" alt="logo-nav">
-                        <li><a href="trabajos.html"> Mis Trabajos</a></li>
-                        <li><a href="faq.html"> FAQ</a></li>
-                        <!-- <li><a href="contactame.html"> Contáctame</a></li>!-->
-                    </ul>
+            <nav
+                class="navbar navbar-expand-lg navbar-dark col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <a class="navbar navbar-brand d-lg-none justify-content-center" href="#"><img class="img-logo"
+                        src="/img/logo.png" alt=""></a>
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="/index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/estudioPrivado.html">ESTUDIO</a>
+                            </li>
+                            <a class="navbar navbar-brand d-none d-lg-block" href="#"><img class="img-logo2"
+                                    src="/img/logo.png" alt=""></a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/trabajos.html">TRABAJOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/faq.html">PREGUNTAS</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </header>
@@ -37,42 +60,35 @@
 
         <main>
 
-            <section class="formulario">
-                <article class="img-contact">
-                    <img src="../img/imgcontact.jpg" alt="imagen-contact">
+            <article>
+                <h3 class="contactame">CONTÁCTAME</h3>
+            </article>
+
+            <section class="container">
+                <article class="row">
+                    <form id="contactForm">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                            <label class="form-label" for="name">Nombre</label>
+                            <input class="form-control" id="name" type="text" placeholder="Escribí tu nombre completo"
+                                data-sb-validations="required"/>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                            <label class="form-label" for="emailAddress">Correo electrónico</label>
+                            <input class="form-control" id="emailAddress" type="email" placeholder="ejemplo@gmail.com"
+                                data-sb-validations="required"/>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                            <label class="form-label" for="message">Escribí tu mensaje</label>
+                            <textarea class="form-control" id="message" type="text" placeholder="Escribí acá"                             style="height: 10rem;" data-sb-validations="required"></textarea>
+
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                            <button class="btn btn-primary btn-lg" id="submitButton" type="submit">Enviar</button>
+                        </div>
+
+                    </form>
                 </article>
-                <article class="formu1">
-                    <form action="">
-                        <div>
-                            <label for="Nombre">
-                                <span>Ingresa tu nombre completo</span>
-                                <input type="text" placeholder="Nombre y Apellido" name="Nombre y Apellido"
-                                    id="Tu nombre completo">
-                            </label>
-                        </div>
-                        <div>
-                            <label for="Correo">
-                                <span>Ingresa tu correo</span>
-                                <input type="email" placeholder="Correo electrónico" name="correo" id="correo">
-                            </label>
-                        </div>
-                        <div>
-                            <label for="Mensaje">Escribe tu mensaje o consulta:</label>
-                            <input type="text" name="Mensaje" placeholder="Deja tu Mensaje" id="Escribir">
-                        </div>
-                        <div>
-                            <label for="Selecciona">Tenés tatuajes?</label>
-                            <select name="Selecciona" id="">
-                                <option value="value1">Si</option>
-                                <option value="value2" selected>No</option>>
-                            </select>
-                        </div>
-                        <div>
-                            <label for="Suscribirse a Newsletter">Suscribirse a Newsletter</label>
-                            <input type="checkbox" name="Suscribirse" id="Suscribirsenewsletter">
-                        </div>
-                </article>
-                </form>
             </section>
         </main>
 
@@ -81,6 +97,10 @@
                     src="../img/iglogo.png" alt="instagram_logo"></a>
         </footer>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>

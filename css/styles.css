@@ -17,57 +17,39 @@ body {
     background-color: black;
 }
 
-.grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-        "nav"
-        "section"
-        "content1"
-        "footer";
-}
 
 /* nav */
 
-nav {
-    grid-area: nav;
+.img-logo {
+    max-width: 1.5rem;
 }
 
-.nav-todo {
-    align-items: center;
-    list-style: none;
-    display: inline-block;
-    margin-top: 10px;
+.img-logo2 {
+    max-width: 2.5rem;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
-.logo-nav {
-    max-width: 40px;
-}
-
-.navbar li {
-    display: inline-block;
-    grid-area: nav;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.navbar li a {
-
+.nav-item .nav-link {
     color: rgb(255, 255, 255);
     display: block;
     text-decoration: none;
-    font-family: 'Source Sans Pro', cursive;
-    font-size: 13px;
-    width: 100%;
+    font-size: 15px;
+    margin: 5px;
+    padding: 5px;
+    letter-spacing: .2em;
+}
+
+.navbar {
+    background-color: rgb(25, 25, 25);
 }
 
 /*titulos y txt*/
 
-.titulo {
+.titulo h1 {
     font-family: 'Bebas Neue', cursive;
     color: rgb(255, 255, 255);
-    grid-area: section;
-    font-size: 3em;
+    font-size: 1.8em;
     text-align: center;
     margin: 25px;
     letter-spacing: 0.1em;
@@ -78,7 +60,6 @@ nav {
     color: rgb(255, 255, 255);
     text-align: center;
     letter-spacing: 5px;
-    grid-area: section;
 }
 
 .texto_estudio {
@@ -87,7 +68,6 @@ nav {
     text-align: center;
     letter-spacing: 2px;
     margin: 15px;
-    grid-area: section;
 }
 
 .subtituloh2 {
@@ -111,88 +91,51 @@ nav {
     font-family: 'Bebas Neue', cursive;
     font-size: 1rem;
     letter-spacing: 5px;
-    text-align: center;
     color: white;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
 }
 
-.respuesta {
+.p-faq{
     font-family: 'Source Sans Pro Regular', sans-serif;
-    color: white;
     text-align: center;
-    margin: 3%;
+    color: white;
+    margin: 10px;
 }
 
-.respuesta li {
-    list-style: none;
-    margin-bottom: 2%;
+.contactame{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    color: white;
+    letter-spacing: .5rem;
+    text-align: center;
 }
+
 
 /* texto e imagen INDEX */
 
-.infoIndex {
-    display: grid;
-    grid-area: content1;
-}
 
 .img-txt {
     text-align: center;
-    margin-top: 20px;
-    padding: 10%;
-    font-family: 'Source Sans Pro Regular', sans-serif;
-    color: white;
+    max-width: 100%;
+
 }
 
-.img-index {
-    max-width: 50vh;
+.txt-index {
     align-items: center;
-    padding: 30px;
+    padding-top: 20px;
+    font-family: 'Source Sans Pro Regular', sans-serif;
+    color: white;
 }
 
 /*imagenes ESTUDIO */
 
-.row {
-    padding: 10px;
-    flex-wrap: wrap;
-    grid-area: content1;
-}
-
-.column {
-    padding: 10px;
-    grid-area: content1;
-
-}
-
-.column img {
-    max-width: 100%;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 4%;
-    grid-area: content1;
+.img-estudio {
+    margin-bottom: 1.5rem;
 }
 
 /*imagenes TRABAJOS */
-
-.trabajos-row {
-    display: flex;
-    grid-area: content1;
-    align-items: center;
-    flex-wrap: wrap;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 5%;
-
-}
-
-.trabajos-row img {
-    grid-area: content1;
-    align-items: center;
-    width: 100%;
-    margin: 10px;
-    border-radius: 4%;
-}
 
 
 /* imagen CONTACTAME */
@@ -204,20 +147,21 @@ nav {
 
 /* formulario */
 
-.formu1 {
-    font-family: 'Source Sans Pro Regular', sans-serif;
+#contactForm{
+    justify-items: center;
+}
+
+form{
     color: white;
-    margin: 70px;
-    justify-content: center;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    align-items: flex-start;
+}
+
+.btn{
+    margin-top: 10px;
 }
 
 /*footer*/
 
-footer {
-    grid-area: footer;
-}
 
 .img-footer {
     width: 50px;
@@ -233,53 +177,38 @@ footer {
 
 @media screen and (min-width: 768px) {
 
-    .grid {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-areas:
-            "nav nav"
-            "section section"
-            "content1 content1"
-            "footer footer";
-    }
 
     /*navbar*/
 
-    nav {
-        display: grid;
-        grid-area: nav;
+    .img-logo {
+        max-width: 1.5rem;
     }
 
-    .navbar li {
-        display: inline-block;
-        padding-left: 70px;
-        padding-right: 30px;
+    .img-logo2 {
+        max-width: 2.5rem;
+        margin-left: 5px;
+        margin-right: 5px;
     }
 
-    .navbar li a {
-
+    .nav-item .nav-link {
         color: rgb(255, 255, 255);
         display: block;
         text-decoration: none;
-        font-family: 'Source Sans Pro', cursive;
-        width: 100%;
-        font-size: 20px;
+        font-size: 15px;
+        margin: 5px;
+        padding: 5px;
+        letter-spacing: .2em;
     }
 
-    .logo-nav {
-        max-width: 4em;
-        margin-top: 15px;
+    .navbar {
+        background-color: rgb(25, 25, 25);
     }
-
 
     /*titulos y txt*/
 
     .titulo {
-        display: grid;
-        grid-area: section;
         font-family: 'Bebas Neue', cursive;
         color: rgb(255, 255, 255);
-        grid-area: section;
         font-size: 3.5em;
         text-align: center;
         margin: 35px;
@@ -291,7 +220,6 @@ footer {
         color: rgb(255, 255, 255);
         text-align: center;
         letter-spacing: 5px;
-        grid-area: section;
     }
 
     .texto_estudio {
@@ -302,7 +230,6 @@ footer {
         letter-spacing: 2px;
         margin: 15px;
         padding: 15px;
-        grid-area: section;
     }
 
     .subtituloh2 {
@@ -323,13 +250,20 @@ footer {
         padding-bottom: 10px;
     }
 
+    .contactame{
+        font-family: 'Bebas Neue', cursive;
+        font-size: 3rem;
+        color: white;
+        letter-spacing: .5rem;
+        text-align: center;
+    }
+
     /*imagenes INDEX*/
 
-    .img-index {
+    .txt-index {
         max-width: 100%;
         align-items: center;
         justify-content: center;
-        grid-area: content1;
     }
 
     .img-txt {
@@ -338,56 +272,20 @@ footer {
         padding: 10%;
         font-family: 'Source Sans Pro Regular', sans-serif;
         color: white;
-        grid-area: content1;
     }
 
     /*imagenes ESTUDIO*/
 
-    .row {
-        padding: 10px;
-        flex-wrap: wrap;
-        grid-area: content1;
-    }
-
-    .column {
-        padding: 10px;
-        grid-area: content1;
-        text-align: center;
-
-    }
-
-    .column img {
-        max-width: 40%;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 4%;
-        grid-area: content1;
+    .img-estudio {
+        margin-bottom: 1.5rem;
     }
 
     /*imagenes TRABAJOS*/
 
-    .trabajos-row {
-        display: flex;
-        grid-area: content1;
-        align-items: center;
-        flex-wrap: wrap;
-
-
-    }
-
-    .trabajos-row img {
-        grid-area: content1;
-        text-align: center;
-        width: 40%;
-        border-radius: 5%;
-    }
 
     /*imagen contactame*/
 
     .img-contact {
-        display: grid;
         justify-content: center;
         margin: 100px;
         max-width: 100%;
@@ -395,16 +293,17 @@ footer {
 
     /*formulario*/
 
-    .formu1 {
-        font-family: 'Source Sans Pro Regular', sans-serif;
+    #contactForm{
+        justify-items: center;
+    }
+
+    form{
         color: white;
-        margin-right: 50px;
-        margin-left: 220px;
-        justify-content: center;
-        padding-top: 25px;
-        padding-bottom: 25px;
-        grid-area: center;
-        font-size: 1.2em;
+        align-items: flex-start;
+    }
+
+    .btn{
+        margin-top: 10px;
     }
 
 }
@@ -414,108 +313,67 @@ footer {
 @media (min-width: 1280px) {
 
 
-    .grid {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-areas:
-            "nav nav nav nav"
-            "section section section section"
-            "content1 content1 content 1 content 1"
-            "footer footer footer footer";
-    }
-
     /*navbar*/
 
     .navbar {
-        font-family: 'Source Sans Pro', cursive;
+        font-family: 'Source Sans Pro Semibold', cursive;
         width: 100%;
         text-align: center;
-        display: grid;
-        grid-area: nav;
     }
 
-    .navbar li {
-        display: inline-block;
+    .img-logo {
+        max-width: 1.5rem;
     }
 
-    .menu {
-        display: inline-block;
-        float: none;
-        padding-right: 30px;
-        padding-left: 30px;
+    .img-logo2 {
+        max-width: 2.5rem;
+        margin-left: 5px;
+        margin-right: 5px;
     }
 
-    .logo-nav {
-        width: 70px;
-        height: 100%;
-        margin-top: 10px;
-
-    }
-
-    .navbar li a {
-
+    .nav-item .nav-link {
         color: rgb(255, 255, 255);
         display: block;
-        font-size: 1.1em;
-        height: 50px;
-        letter-spacing: 3px;
-        margin: 20px;
-        padding: 20px;
-        position: relative;
         text-decoration: none;
-        text-transform: uppercase;
-        align-items: center;
-
+        font-size: 15px;
+        margin-left: 25px;
+        margin-right: 25px;
+        letter-spacing: .2em;
     }
 
-    .navbar li a:hover {
-        color: rgb(145, 24, 24);
-        transition: .8s;
+    .navbar {
+        background-color: rgb(25, 25, 25);
     }
+
 
     /*titulos y txt*/
 
-    .titulo {
+    .titulo h1 {
         font-family: 'Bebas Neue', cursive;
         color: rgb(255, 255, 255);
         text-align: center;
         padding-top: 10px;
-        padding-bottom: 15px;
-        font-size: 5em;
+        padding-bottom: 10px;
+        font-size: 10rem;
         letter-spacing: 4px;
-        display: grid;
-        grid-area: section;
     }
-    
+
     .titulo h1:hover {
         color: rgb(145, 24, 24);
         transition: .8s;
     }
-    
+
     .subtitulo {
         font-family: 'Source Sans Pro ExtraLight', sans-serif;
         color: rgb(255, 255, 255);
         text-align: center;
         letter-spacing: 5px;
-        display: grid;
-        grid-area: section;
+        font-size: 2rem;
     }
 
     .img-txt {
-        display: flex;
-        grid-area: content1;
-        text-align: center;
-    }
-    
-    .img-txt {
-        display: flex;
-        margin-top: 0px;
-        margin-left: 50px;
-        margin-right: 50px;
-        text-align: center;
-        font-family: 'Source Sans Pro Regular', sans-serif;
-        color: white;
-        grid-area: content1;
+        max-width: 50rem;
+        align-items: right;
     }
 
     .texto_estudio {
@@ -533,9 +391,8 @@ footer {
         color: white;
         margin-top: 20px;
         margin-bottom: 20px;
-        grid-area: section;
     }
-    
+
     .pregunta h5 {
         font-family: 'Bebas Neue', cursive;
         font-size: 1.8rem;
@@ -544,96 +401,76 @@ footer {
         color: white;
         padding-top: 20px;
         padding-bottom: 10px;
-        grid-area: section;
     }
-    
+
     .respuesta {
         font-family: 'Source Sans Pro Regular', sans-serif;
         color: white;
         text-align: center;
         margin-left: 500px;
         margin-right: 500px;
-        grid-area: content1;
     }
-    
+
     .respuesta li {
         list-style: none;
-        grid-area: content1;
+    }
+
+    .contactame{
+        font-family: 'Bebas Neue', cursive;
+        font-size: 3rem;
+        color: white;
+        letter-spacing: .5rem;
+        text-align: center;
     }
 
     /*imagen INDEX*/
 
-    .img-index {
-        display: flex;
-        max-width: 65%;
-        grid-area: content1;
+    .txt-index {
+        color: white;
+        text-align: center;
+        margin-top: 200px;
     }
-    
+
     /*imagenes ESTUDIO*/
 
-    .row{
-        display: grid;
-        grid-area: content1;
+    .img-estudio {
+        margin-bottom: 1.5rem;
     }
-    
-    .column img {
-        max-width: 40%;
-        margin-left: 2%;
-        margin-right: auto;
-        border-radius: 4%;
+
+    .rowimg img{
+        max-width: 100%;
+        opacity: .2;
+        transition: opacity .5s;
     }
-    
-    .hover-column img {
-        -webkit-filter: grayscale(100%);
-        filter: grayscale(100%);
-        -webkit-transition: .8s ease-in-out;
-        transition: .5s ease-in-out;
+
+    .row img {
+        transition: opacity .5s ease-in-out;
     }
-    
-    .hover-column:hover img {
-        -webkit-filter: grayscale(0);
-        filter: grayscale(0);
+
+    .row img:hover {
+        opacity: 1;
     }
 
     /*imagenes TRABAJOS*/
 
-    .trabajos-row {
-        display: flex;
+    .carousel-item{
+        max-width: 50%;
         align-items: center;
-        flex-wrap: wrap;
-        padding: 50px;
-        margin: 50px;
-    }
-    
-    .trabajos-row img {
-        align-items: center;
-        width: 300px;
-        margin: 10px;
-        border-radius: 4%;
-        box-shadow: 2px 2px 2px 1px rgba(192, 19, 19, 0.215);
-    }
-
-    /*imagen CONTACTAME*/
-
-    .img-contact {
-        display: flex;
-        justify-content: center;
-        margin: 100px;
-        max-width: 37%;
     }
 
     /*formulario*/
 
-    .formulario {
-        display: flex;
+    #contactForm{
+        justify-items: center;
     }
-    
-    .formu1 {
-        font-family: 'Source Sans Pro Regular', sans-serif;
+
+    form{
         color: white;
-        display: flex;
-        margin-top: 100px;
-        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .btn{
+        margin-top: 10px;
     }
 
     footer {

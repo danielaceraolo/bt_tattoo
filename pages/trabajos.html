@@ -7,26 +7,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boulevard Tattoo - Mis Trabajos</title>
     <link rel="icon" type="icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
     <div class="container">
         <header>
 
-            <nav class="navbar">
-                <div class="nav-todo">
-                    <ul class="menu">
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="estudioPrivado.html"> Estudio </a></li>
-                        <!-- <li><a href="trabajos.html"> Mis Trabajos</a></li> !-->
-                        <img class="logo-nav" src="../img/logo.png" alt="logo-nav">
-                        <li><a href="faq.html"> FAQ</a></li>
-                        <li><a href="contactame.html"> Contáctame</a></li>
-                    </ul>
+            <nav
+                class="navbar navbar-expand-lg navbar-dark col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <a class="navbar navbar-brand d-lg-none justify-content-center" href="#"><img class="img-logo"
+                        src="/img/logo.png" alt=""></a>
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/estudioPrivado.html">ESTUDIO</a>
+                            </li>
+                            <a class="navbar navbar-brand d-none d-lg-block" href="#"><img class="img-logo2"
+                                    src="/img/logo.png" alt=""></a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/faq.html">PREGUNTAS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/contactame.html">CONTÁCTAME</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
 
@@ -41,27 +63,55 @@
             </section>
             <section>
 
-                <article class="trabajos-row">
-                    <div class="trabajos-column">
-                        <img src="../img/tatto1.jpg" alt="tatuaje1">
-                        <img src="../img/tatto2.jpg" alt="tatuaje2">
-                        <img src="../img/tatto3.jpg" alt="tatuaje3">
-                        <img src="../img/tatto4.jpg" alt="tatuaje4">
-                        <img src="../img/tatto5.jpg" alt="tatuaje5">
-                        <img src="../img/tatto6.jpg" alt="tatuaje6">
-                        <img src="../img/tatto7.jpg" alt="tatuaje7">
-                        <img src="../img/tatto8.jpg" alt="tatuaje8">
-                    </div>
+                <article class="row">
+                    <div class="col-xs-10 col-sm-10 col-md-6 col-lg-6 col-xl-6 col-xxl-6 container-lg my-3">
+                        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="/img/tatto1.jpg" class="d-block w-100" alt="Tatuaje 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/img/tatto2.jpg" class="d-block w-100" alt="Tatuaje 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/img/tatto3.jpg" class="d-block w-100" alt="Tatuaje 3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/img/tatto4.jpg" class="d-block w-100" alt="Tatuaje 4">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/img/tatto5.jpg" class="d-block w-100" alt="Tatuaje 5">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/img/tatto6.jpg" class="d-block w-100" alt="Tatuaje 6">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/img/tatto7.jpg" class="d-block w-100" alt="Tatuaje 7">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/img/tatto8.jpg" class="d-block w-100" alt="Tatuaje 8">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#myCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                        </div>
                 </article>
-
+                
             </section>
         </main>
-
         <footer>
             <a href="https://www.instagram.com/boulevard.tattoo/" target="blank"><img class="img-footer"
                     src="../img/iglogo.png" alt="instagram_logo"></a>
         </footer>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>
