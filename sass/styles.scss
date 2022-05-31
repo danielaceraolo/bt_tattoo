@@ -3,19 +3,23 @@
     src: url(../fonts/SourceSansPro-Regular.ttf);
     font-family: 'Bebas Neue', cursive;
     src: url(../fonts/BebasNeue-Regular.ttf);
+
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
 }
 
 body {
     background-color: black;
 }
 
+
 /* nav */
+
 .img-logo {
     max-width: 1.5rem;
 }
@@ -27,7 +31,7 @@ body {
 }
 
 .nav-item .nav-link {
-    color: white;
+    color: rgb(255, 255, 255);
     display: block;
     text-decoration: none;
     font-size: 15px;
@@ -37,13 +41,14 @@ body {
 }
 
 .navbar {
-    background-color: #191919;
+    background-color: rgb(25, 25, 25);
 }
 
 /*titulos y txt*/
+
 .titulo h1 {
     font-family: 'Bebas Neue', cursive;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 1.8em;
     text-align: center;
     margin: 25px;
@@ -52,14 +57,14 @@ body {
 
 .subtitulo {
     font-family: 'Source Sans Pro ExtraLight', sans-serif;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
     letter-spacing: 5px;
 }
 
 .texto_estudio {
     font-family: 'Source Sans Pro ExtraLight', sans-serif;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
     letter-spacing: 2px;
     margin: 15px;
@@ -67,7 +72,7 @@ body {
 
 .subtituloh2 {
     font-family: 'Source Sans Pro ExtraLight', sans-serif;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
     letter-spacing: 5px;
 }
@@ -92,14 +97,14 @@ body {
     text-align: center;
 }
 
-.p-faq {
+.p-faq{
     font-family: 'Source Sans Pro Regular', sans-serif;
     text-align: center;
     color: white;
     margin: 10px;
 }
 
-.contactame {
+.contactame{
     font-family: 'Bebas Neue', cursive;
     font-size: 3rem;
     color: white;
@@ -107,10 +112,14 @@ body {
     text-align: center;
 }
 
+
 /* texto e imagen INDEX */
+
+
 .img-txt {
     text-align: center;
     max-width: 100%;
+
 }
 
 .txt-index {
@@ -121,32 +130,39 @@ body {
 }
 
 /*imagenes ESTUDIO */
+
 .img-estudio {
     margin-bottom: 1.5rem;
 }
 
 /*imagenes TRABAJOS */
+
+
 /* imagen CONTACTAME */
+
 .img-contact img {
     justify-content: center;
     max-width: 100%;
 }
 
 /* formulario */
-#contactForm {
+
+#contactForm{
     justify-items: center;
 }
 
-form {
+form{
     color: white;
     align-items: flex-start;
 }
 
-.btn {
+.btn{
     margin-top: 10px;
 }
 
 /*footer*/
+
+
 .img-footer {
     width: 50px;
     height: 50px;
@@ -156,10 +172,14 @@ form {
     margin-bottom: 50px;
 }
 
+
 /* tablet */
+
 @media screen and (min-width: 768px) {
 
+
     /*navbar*/
+
     .img-logo {
         max-width: 1.5rem;
     }
@@ -171,7 +191,7 @@ form {
     }
 
     .nav-item .nav-link {
-        color: white;
+        color: rgb(255, 255, 255);
         display: block;
         text-decoration: none;
         font-size: 15px;
@@ -181,13 +201,14 @@ form {
     }
 
     .navbar {
-        background-color: #191919;
+        background-color: rgb(25, 25, 25);
     }
 
     /*titulos y txt*/
+
     .titulo {
         font-family: 'Bebas Neue', cursive;
-        color: white;
+        color: rgb(255, 255, 255);
         font-size: 3.5em;
         text-align: center;
         margin: 35px;
@@ -196,14 +217,14 @@ form {
 
     .subtitulo {
         font-family: 'Source Sans Pro ExtraLight', sans-serif;
-        color: white;
+        color: rgb(255, 255, 255);
         text-align: center;
         letter-spacing: 5px;
     }
 
     .texto_estudio {
         font-family: 'Source Sans Pro ExtraLight', sans-serif;
-        color: white;
+        color: rgb(255, 255, 255);
         text-align: center;
         font-size: 1.5rem;
         letter-spacing: 2px;
@@ -213,7 +234,7 @@ form {
 
     .subtituloh2 {
         font-family: 'Source Sans Pro ExtraLight', sans-serif;
-        color: white;
+        color: rgb(255, 255, 255);
         text-align: center;
         letter-spacing: 5px;
         font-size: 1.3rem;
@@ -229,7 +250,7 @@ form {
         padding-bottom: 10px;
     }
 
-    .contactame {
+    .contactame{
         font-family: 'Bebas Neue', cursive;
         font-size: 3rem;
         color: white;
@@ -238,6 +259,7 @@ form {
     }
 
     /*imagenes INDEX*/
+
     .txt-index {
         max-width: 100%;
         align-items: center;
@@ -253,12 +275,16 @@ form {
     }
 
     /*imagenes ESTUDIO*/
+
     .img-estudio {
         margin-bottom: 1.5rem;
     }
 
     /*imagenes TRABAJOS*/
+
+
     /*imagen contactame*/
+
     .img-contact {
         justify-content: center;
         margin: 100px;
@@ -266,58 +292,67 @@ form {
     }
 
     /*formulario*/
-    #contactForm {
+
+    #contactForm{
         justify-items: center;
     }
 
-    form {
+    form{
         color: white;
         align-items: flex-start;
     }
 
-    .btn {
+    .btn{
         margin-top: 10px;
     }
+
 }
 
 /*desktop*/
+
 @media (min-width: 1280px) {
 
+
     /*navbar*/
-    .navbar {
-        font-family: 'Source Sans Pro Semibold', cursive;
-        width: 100%;
-        text-align: center;
-    }
 
-    .img-logo {
-        max-width: 1.5rem;
-    }
+    header{
 
-    .img-logo2 {
-        max-width: 2.5rem;
-        margin-left: 5px;
-        margin-right: 5px;
-    }
+        .navbar{
+            font-family: 'Source Sans Pro Semibold', cursive;
+                    width: 100%;
+                    text-align: center;
+                    background-color: rgb(25, 25, 25);
+        }
+        
+            .nav-item .nav-link {
+                color: rgb(255, 255, 255);
+                display: block;
+                text-decoration: none;
+                font-size: 15px;
+                margin-left: 25px;
+                margin-right: 25px;
+                letter-spacing: .2em;
+            }
+        
+            .img-logo {
+                max-width: 1.5rem;
+            }
+        
+            .img-logo2 {
+                max-width: 2.5rem;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+        
+        
+        }
 
-    .nav-item .nav-link {
-        color: white;
-        display: block;
-        text-decoration: none;
-        font-size: 15px;
-        margin-left: 25px;
-        margin-right: 25px;
-        letter-spacing: .2em;
-    }
-
-    .navbar {
-        background-color: #191919;
-    }
 
     /*titulos y txt*/
+
     .titulo h1 {
         font-family: 'Bebas Neue', cursive;
-        color: white;
+        color: rgb(255, 255, 255);
         text-align: center;
         padding-top: 10px;
         padding-bottom: 10px;
@@ -326,13 +361,13 @@ form {
     }
 
     .titulo h1:hover {
-        color: #911818;
+        color: rgb(145, 24, 24);
         transition: .8s;
     }
 
     .subtitulo {
         font-family: 'Source Sans Pro ExtraLight', sans-serif;
-        color: white;
+        color: rgb(255, 255, 255);
         text-align: center;
         letter-spacing: 5px;
         font-size: 2rem;
@@ -345,7 +380,7 @@ form {
 
     .texto_estudio {
         font-family: 'Source Sans Pro Light', sans-serif;
-        color: white;
+        color: rgb(255, 255, 255);
         text-align: center;
         letter-spacing: 5px;
     }
@@ -382,7 +417,7 @@ form {
         list-style: none;
     }
 
-    .contactame {
+    .contactame{
         font-family: 'Bebas Neue', cursive;
         font-size: 3rem;
         color: white;
@@ -391,6 +426,7 @@ form {
     }
 
     /*imagen INDEX*/
+
     .txt-index {
         color: white;
         text-align: center;
@@ -398,11 +434,12 @@ form {
     }
 
     /*imagenes ESTUDIO*/
+
     .img-estudio {
         margin-bottom: 1.5rem;
     }
 
-    .rowimg img {
+    .rowimg img{
         max-width: 100%;
         opacity: .2;
         transition: opacity .5s;
@@ -417,22 +454,24 @@ form {
     }
 
     /*imagenes TRABAJOS*/
-    .carousel-item {
+
+    .carousel-item{
         max-width: 50%;
         align-items: center;
     }
 
     /*formulario*/
-    #contactForm {
+
+    #contactForm{
         justify-items: center;
     }
 
-    form {
+    form{
         color: white;
         align-items: flex-start;
     }
 
-    .btn {
+    .btn{
         margin-top: 10px;
     }
 
@@ -440,7 +479,5 @@ form {
         margin-top: 25px;
     }
 
-    .submitButton {
-        align-items: center;
-    }
+
 }
