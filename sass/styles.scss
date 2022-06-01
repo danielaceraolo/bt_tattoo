@@ -1,10 +1,4 @@
-@font-face {
-    font-family: 'Source Sans Pro', cursive;
-    src: url(../fonts/SourceSansPro-Regular.ttf);
-    font-family: 'Bebas Neue', cursive;
-    src: url(../fonts/BebasNeue-Regular.ttf);
-
-}
+@import '_variables.scss';
 
 * {
     box-sizing: border-box;
@@ -47,7 +41,7 @@ body {
 /*titulos y txt*/
 
 .titulo h1 {
-    font-family: 'Bebas Neue', cursive;
+    font-family: $font-title;
     color: rgb(255, 255, 255);
     font-size: 1.8em;
     text-align: center;
@@ -56,14 +50,14 @@ body {
 }
 
 .subtitulo {
-    font-family: 'Source Sans Pro ExtraLight', sans-serif;
+    font-family: $font-s-light;
     color: rgb(255, 255, 255);
     text-align: center;
     letter-spacing: 5px;
 }
 
 .texto_estudio {
-    font-family: 'Source Sans Pro ExtraLight', sans-serif;
+    font-family: $font-s-light;
     color: rgb(255, 255, 255);
     text-align: center;
     letter-spacing: 2px;
@@ -71,14 +65,14 @@ body {
 }
 
 .subtituloh2 {
-    font-family: 'Source Sans Pro ExtraLight', sans-serif;
+    font-family: $font-s-light;
     color: rgb(255, 255, 255);
     text-align: center;
     letter-spacing: 5px;
 }
 
 .subtitulofaq {
-    font-family: 'Bebas Neue', cursive;
+    font-family: $font-title;
     font-size: 2.5rem;
     letter-spacing: 5px;
     text-align: center;
@@ -88,7 +82,7 @@ body {
 }
 
 .pregunta h5 {
-    font-family: 'Bebas Neue', cursive;
+    font-family: $font-title;
     font-size: 1rem;
     letter-spacing: 5px;
     color: white;
@@ -98,14 +92,14 @@ body {
 }
 
 .p-faq{
-    font-family: 'Source Sans Pro Regular', sans-serif;
+    font-family: $font-s;
     text-align: center;
     color: white;
     margin: 10px;
 }
 
 .contactame{
-    font-family: 'Bebas Neue', cursive;
+    font-family: $font-title;
     font-size: 3rem;
     color: white;
     letter-spacing: .5rem;
@@ -125,7 +119,7 @@ body {
 .txt-index {
     align-items: center;
     padding-top: 20px;
-    font-family: 'Source Sans Pro Regular', sans-serif;
+    font-family: $font-s;
     color: white;
 }
 
@@ -207,7 +201,7 @@ form{
     /*titulos y txt*/
 
     .titulo {
-        font-family: 'Bebas Neue', cursive;
+        font-family: $font-title;
         color: rgb(255, 255, 255);
         font-size: 3.5em;
         text-align: center;
@@ -216,14 +210,14 @@ form{
     }
 
     .subtitulo {
-        font-family: 'Source Sans Pro ExtraLight', sans-serif;
+        font-family: $font-s-light;
         color: rgb(255, 255, 255);
         text-align: center;
         letter-spacing: 5px;
     }
 
     .texto_estudio {
-        font-family: 'Source Sans Pro ExtraLight', sans-serif;
+        font-family: $font-s-light;
         color: rgb(255, 255, 255);
         text-align: center;
         font-size: 1.5rem;
@@ -233,7 +227,7 @@ form{
     }
 
     .subtituloh2 {
-        font-family: 'Source Sans Pro ExtraLight', sans-serif;
+        font-family: $font-s-light;
         color: rgb(255, 255, 255);
         text-align: center;
         letter-spacing: 5px;
@@ -241,7 +235,7 @@ form{
     }
 
     .pregunta h5 {
-        font-family: 'Bebas Neue', cursive;
+        font-family: $font-title;
         font-size: 1.5rem;
         letter-spacing: 5px;
         text-align: center;
@@ -251,7 +245,7 @@ form{
     }
 
     .contactame{
-        font-family: 'Bebas Neue', cursive;
+        font-family: $font-title;
         font-size: 3rem;
         color: white;
         letter-spacing: .5rem;
@@ -270,7 +264,7 @@ form{
         text-align: center;
         margin-top: 10px;
         padding: 10%;
-        font-family: 'Source Sans Pro Regular', sans-serif;
+        font-family: $font-s;
         color: white;
     }
 
@@ -318,7 +312,7 @@ form{
     header{
 
         .navbar{
-            font-family: 'Source Sans Pro Semibold', cursive;
+            font-family: $font-s-semibold;
                     width: 100%;
                     text-align: center;
                     background-color: rgb(25, 25, 25);
@@ -351,7 +345,7 @@ form{
     /*titulos y txt*/
 
     .titulo h1 {
-        font-family: 'Bebas Neue', cursive;
+        font-family: $font-title;
         color: rgb(255, 255, 255);
         text-align: center;
         padding-top: 10px;
@@ -366,7 +360,7 @@ form{
     }
 
     .subtitulo {
-        font-family: 'Source Sans Pro ExtraLight', sans-serif;
+        font-family: $font-s-light;
         color: rgb(255, 255, 255);
         text-align: center;
         letter-spacing: 5px;
@@ -379,14 +373,14 @@ form{
     }
 
     .texto_estudio {
-        font-family: 'Source Sans Pro Light', sans-serif;
+        font-family: $font-s-light;
         color: rgb(255, 255, 255);
         text-align: center;
         letter-spacing: 5px;
     }
 
     .subtitulofaq {
-        font-family: 'Bebas Neue', cursive;
+        font-family: $font-title;
         font-size: 2rem;
         letter-spacing: 5px;
         text-align: center;
@@ -396,7 +390,7 @@ form{
     }
 
     .pregunta h5 {
-        font-family: 'Bebas Neue', cursive;
+        font-family: $font-title;
         font-size: 1.8rem;
         letter-spacing: 5px;
         text-align: center;
@@ -406,7 +400,7 @@ form{
     }
 
     .respuesta {
-        font-family: 'Source Sans Pro Regular', sans-serif;
+        font-family: $font-s;
         color: white;
         text-align: center;
         margin-left: 500px;
@@ -418,7 +412,7 @@ form{
     }
 
     .contactame{
-        font-family: 'Bebas Neue', cursive;
+        font-family: $font-title;
         font-size: 3rem;
         color: white;
         letter-spacing: .5rem;
