@@ -25,7 +25,7 @@ body {
   letter-spacing: .2em; }
 
 .navbar {
-  background-color: #191919; }
+  background-color: black; }
 
 /*titulos y txt*/
 .titulo h1 {
@@ -101,7 +101,6 @@ body {
 .img-estudio {
   margin-bottom: 1.5rem; }
 
-/*imagenes TRABAJOS */
 /* imagen CONTACTAME */
 .img-contact img {
   justify-content: center;
@@ -201,7 +200,6 @@ form {
   /*imagenes ESTUDIO*/
   .img-estudio {
     margin-bottom: 1.5rem; }
-  /*imagenes TRABAJOS*/
   /*imagen contactame*/
   .img-contact {
     justify-content: center;
@@ -217,7 +215,7 @@ form {
     margin-top: 10px; } }
 
 /*desktop*/
-@media (min-width: 1280px) {
+@media (min-width: 992px) {
   /*navbar*/
   header .navbar {
     font-family: "Source Sans Pro Semibold", cursive;
@@ -248,7 +246,7 @@ form {
     font-size: 10rem;
     letter-spacing: 4px; }
   .titulo h1:hover {
-    color: #911818;
+    color: red;
     transition: .8s; }
   .subtitulo {
     font-family: "Source Sans Pro ExtraLight", sans-serif;
@@ -312,7 +310,6 @@ form {
     opacity: 1; }
   /*imagenes TRABAJOS*/
   .carousel-item {
-    max-width: 50%;
     align-items: center; }
   /*formulario*/
   #contactForm {

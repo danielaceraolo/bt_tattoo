@@ -1,4 +1,9 @@
 @import '_variables.scss';
+@import '_mixins.scss';
+
+@function color($color-name){
+	@return map-get($colors, $color-name)
+}
 
 * {
     box-sizing: border-box;
@@ -8,7 +13,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: color(first);
 }
 
 
@@ -25,7 +30,7 @@ body {
 }
 
 .nav-item .nav-link {
-    color: rgb(255, 255, 255);
+    color: color(second);
     display: block;
     text-decoration: none;
     font-size: 15px;
@@ -35,14 +40,14 @@ body {
 }
 
 .navbar {
-    background-color: rgb(25, 25, 25);
+    background-color: color(first);
 }
 
 /*titulos y txt*/
 
 .titulo h1 {
     font-family: $font-title;
-    color: rgb(255, 255, 255);
+    color: color(second);
     font-size: 1.8em;
     text-align: center;
     margin: 25px;
@@ -51,14 +56,14 @@ body {
 
 .subtitulo {
     font-family: $font-s-light;
-    color: rgb(255, 255, 255);
+    color: color(second);
     text-align: center;
     letter-spacing: 5px;
 }
 
 .texto_estudio {
     font-family: $font-s-light;
-    color: rgb(255, 255, 255);
+    color: color(second);
     text-align: center;
     letter-spacing: 2px;
     margin: 15px;
@@ -66,7 +71,7 @@ body {
 
 .subtituloh2 {
     font-family: $font-s-light;
-    color: rgb(255, 255, 255);
+    color: color(second);
     text-align: center;
     letter-spacing: 5px;
 }
@@ -76,7 +81,7 @@ body {
     font-size: 2.5rem;
     letter-spacing: 5px;
     text-align: center;
-    color: white;
+    color: color(second);
     margin-top: 40px;
     margin-bottom: 30px;
 }
@@ -85,7 +90,7 @@ body {
     font-family: $font-title;
     font-size: 1rem;
     letter-spacing: 5px;
-    color: white;
+    color: color(second);
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
@@ -94,14 +99,14 @@ body {
 .p-faq{
     font-family: $font-s;
     text-align: center;
-    color: white;
+    color: color(second);
     margin: 10px;
 }
 
 .contactame{
     font-family: $font-title;
     font-size: 3rem;
-    color: white;
+    color: color(second);
     letter-spacing: .5rem;
     text-align: center;
 }
@@ -120,7 +125,7 @@ body {
     align-items: center;
     padding-top: 20px;
     font-family: $font-s;
-    color: white;
+    color: color(second);
 }
 
 /*imagenes ESTUDIO */
@@ -128,8 +133,6 @@ body {
 .img-estudio {
     margin-bottom: 1.5rem;
 }
-
-/*imagenes TRABAJOS */
 
 
 /* imagen CONTACTAME */
@@ -146,7 +149,7 @@ body {
 }
 
 form{
-    color: white;
+    color: color(second);
     align-items: flex-start;
 }
 
@@ -185,7 +188,7 @@ form{
     }
 
     .nav-item .nav-link {
-        color: rgb(255, 255, 255);
+        color: color(second);
         display: block;
         text-decoration: none;
         font-size: 15px;
@@ -202,7 +205,7 @@ form{
 
     .titulo {
         font-family: $font-title;
-        color: rgb(255, 255, 255);
+        color: color(second);
         font-size: 3.5em;
         text-align: center;
         margin: 35px;
@@ -211,14 +214,14 @@ form{
 
     .subtitulo {
         font-family: $font-s-light;
-        color: rgb(255, 255, 255);
+        color: color(second);
         text-align: center;
         letter-spacing: 5px;
     }
 
     .texto_estudio {
         font-family: $font-s-light;
-        color: rgb(255, 255, 255);
+        color: color(second);
         text-align: center;
         font-size: 1.5rem;
         letter-spacing: 2px;
@@ -228,7 +231,7 @@ form{
 
     .subtituloh2 {
         font-family: $font-s-light;
-        color: rgb(255, 255, 255);
+        color: color(second);
         text-align: center;
         letter-spacing: 5px;
         font-size: 1.3rem;
@@ -239,7 +242,7 @@ form{
         font-size: 1.5rem;
         letter-spacing: 5px;
         text-align: center;
-        color: white;
+        color: color(second);
         padding-top: 10px;
         padding-bottom: 10px;
     }
@@ -247,7 +250,7 @@ form{
     .contactame{
         font-family: $font-title;
         font-size: 3rem;
-        color: white;
+        color: color(second);
         letter-spacing: .5rem;
         text-align: center;
     }
@@ -265,7 +268,7 @@ form{
         margin-top: 10px;
         padding: 10%;
         font-family: $font-s;
-        color: white;
+        color: color(second);
     }
 
     /*imagenes ESTUDIO*/
@@ -273,8 +276,6 @@ form{
     .img-estudio {
         margin-bottom: 1.5rem;
     }
-
-    /*imagenes TRABAJOS*/
 
 
     /*imagen contactame*/
@@ -292,7 +293,7 @@ form{
     }
 
     form{
-        color: white;
+        color: color(second);
         align-items: flex-start;
     }
 
@@ -304,7 +305,7 @@ form{
 
 /*desktop*/
 
-@media (min-width: 1280px) {
+@include desktop {
 
 
     /*navbar*/
@@ -319,7 +320,7 @@ form{
         }
         
             .nav-item .nav-link {
-                color: rgb(255, 255, 255);
+                color: color(second);
                 display: block;
                 text-decoration: none;
                 font-size: 15px;
@@ -346,7 +347,7 @@ form{
 
     .titulo h1 {
         font-family: $font-title;
-        color: rgb(255, 255, 255);
+        color: color(second);
         text-align: center;
         padding-top: 10px;
         padding-bottom: 10px;
@@ -355,13 +356,13 @@ form{
     }
 
     .titulo h1:hover {
-        color: rgb(145, 24, 24);
+        color: color(thrid);
         transition: .8s;
     }
 
     .subtitulo {
         font-family: $font-s-light;
-        color: rgb(255, 255, 255);
+        color: color(second);
         text-align: center;
         letter-spacing: 5px;
         font-size: 2rem;
@@ -374,7 +375,7 @@ form{
 
     .texto_estudio {
         font-family: $font-s-light;
-        color: rgb(255, 255, 255);
+        color: color(second);
         text-align: center;
         letter-spacing: 5px;
     }
@@ -384,7 +385,7 @@ form{
         font-size: 2rem;
         letter-spacing: 5px;
         text-align: center;
-        color: white;
+        color: color(second);
         margin-top: 20px;
         margin-bottom: 20px;
     }
@@ -394,14 +395,14 @@ form{
         font-size: 1.8rem;
         letter-spacing: 5px;
         text-align: center;
-        color: white;
+        color: color(second);
         padding-top: 20px;
         padding-bottom: 10px;
     }
 
     .respuesta {
         font-family: $font-s;
-        color: white;
+        color: color(second);
         text-align: center;
         margin-left: 500px;
         margin-right: 500px;
@@ -414,7 +415,7 @@ form{
     .contactame{
         font-family: $font-title;
         font-size: 3rem;
-        color: white;
+        color: color(second);
         letter-spacing: .5rem;
         text-align: center;
     }
@@ -422,7 +423,7 @@ form{
     /*imagen INDEX*/
 
     .txt-index {
-        color: white;
+        color: color(second);
         text-align: center;
         margin-top: 200px;
     }
@@ -450,7 +451,6 @@ form{
     /*imagenes TRABAJOS*/
 
     .carousel-item{
-        max-width: 50%;
         align-items: center;
     }
 
@@ -461,7 +461,7 @@ form{
     }
 
     form{
-        color: white;
+        color: color(second);
         align-items: flex-start;
     }
 
