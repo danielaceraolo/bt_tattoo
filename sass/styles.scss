@@ -1,8 +1,8 @@
 @import '_variables.scss';
 @import '_mixins.scss';
 
-@function color($color-name){
-	@return map-get($colors, $color-name)
+@function color($color-name) {
+    @return map-get($colors, $color-name)
 }
 
 * {
@@ -29,14 +29,16 @@ body {
     margin-right: 5px;
 }
 
-.nav-item .nav-link {
-    color: color(second);
-    display: block;
-    text-decoration: none;
-    font-size: 15px;
-    margin: 5px;
-    padding: 5px;
-    letter-spacing: .2em;
+.nav-item {
+    .nav-link {
+        color: color(second);
+        display: block;
+        text-decoration: none;
+        font-size: 15px;
+        margin: 5px;
+        padding: 5px;
+        letter-spacing: .2em;
+    }
 }
 
 .navbar {
@@ -45,13 +47,15 @@ body {
 
 /*titulos y txt*/
 
-.titulo h1 {
-    font-family: $font-title;
-    color: color(second);
-    font-size: 1.8em;
-    text-align: center;
-    margin: 25px;
-    letter-spacing: 0.1em;
+.titulo {
+    h1 {
+        font-family: $font-title;
+        color: color(second);
+        font-size: 1.8em;
+        text-align: center;
+        margin: 10px;
+        letter-spacing: 0.1em;
+    }
 }
 
 .subtitulo {
@@ -86,24 +90,26 @@ body {
     margin-bottom: 30px;
 }
 
-.pregunta h5 {
-    font-family: $font-title;
-    font-size: 1rem;
-    letter-spacing: 5px;
-    color: color(second);
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: center;
+.pregunta {
+    h5 {
+        font-family: $font-title;
+        font-size: 1rem;
+        letter-spacing: 5px;
+        color: color(second);
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
 }
 
-.p-faq{
+.p-faq {
     font-family: $font-s;
     text-align: center;
     color: color(second);
     margin: 10px;
 }
 
-.contactame{
+.contactame {
     font-family: $font-title;
     font-size: 3rem;
     color: color(second);
@@ -113,19 +119,20 @@ body {
 
 
 /* texto e imagen INDEX */
-
-
-.img-txt {
+.img-index {
+    display: flex;
     text-align: center;
     max-width: 100%;
-
 }
 
 .txt-index {
     align-items: center;
-    padding-top: 20px;
-    font-family: $font-s;
-    color: color(second);
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: "Source Sans Pro", cursive;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
 }
 
 /*imagenes ESTUDIO */
@@ -144,31 +151,110 @@ body {
 
 /* formulario */
 
-#contactForm{
-    justify-items: center;
-}
-
-form{
+.contact-in {
+    width: 80%;
+    align-items: center;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px color(fourth);
+    background: color(first);
+    font-family: $font-title;
     color: color(second);
-    align-items: flex-start;
+    letter-spacing: 10px;
+    font-size: 2em;
 }
 
-.btn{
-    margin-top: 10px;
+.contact-map {
+    width: 100%;
+    height: auto;
+    flex: 40%;
+    border-radius: 15px;
+}
+
+.contact-map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.contact-form {
+    width: 100%;
+    height: auto;
+    flex: 50%;
+    padding: 30px;
+    text-align: center;
+}
+
+.contact-form h1 {
+    margin-bottom: 10px;
+}
+
+.contact-form-txt {
+    width: 100%;
+    height: 40px;
+    color: color(first);
+    border: 1px solid color(fourth);
+    border-radius: 50px;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: .8rem;
+}
+
+.contact-form-txtarea {
+    width: 100%;
+    height: 130px;
+    color: color(first);
+    border: 1px solid color(fourth);
+    border-radius: 20px;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 15px;
+    font-family: $font-s;
+    font-size: .8rem;
+}
+
+.contact-form-txt::placeholder {
+    font-family: $font-s;
+}
+
+.contact-form-btn {
+    font-family: $font-s;
+    font-weight: bold;
+    letter-spacing: 5px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    background-color: color(thrid);
+    color: color(second);
+    padding: 10px 0;
+    font-size: 18px;
 }
 
 /*footer*/
 
 
-.img-footer {
-    width: 50px;
-    height: 50px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
+footer ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    list-style-type: none;
+    padding: auto;
+
+    .img-footer {
+        max-width: 10%;
+    }
 }
 
+a {
+    text-decoration: none;
+    color: color(second);
+    font-size: 0.8rem;
+}
 
 /* tablet */
 
@@ -187,14 +273,16 @@ form{
         margin-right: 5px;
     }
 
-    .nav-item .nav-link {
-        color: color(second);
-        display: block;
-        text-decoration: none;
-        font-size: 15px;
-        margin: 5px;
-        padding: 5px;
-        letter-spacing: .2em;
+    .nav-item {
+        .nav-link {
+            color: color(second);
+            display: block;
+            text-decoration: none;
+            font-size: 15px;
+            margin: 5px;
+            padding: 5px;
+            letter-spacing: .2em;
+        }
     }
 
     .navbar {
@@ -247,7 +335,7 @@ form{
         padding-bottom: 10px;
     }
 
-    .contactame{
+    .contactame {
         font-family: $font-title;
         font-size: 3rem;
         color: color(second);
@@ -256,7 +344,6 @@ form{
     }
 
     /*imagenes INDEX*/
-
     .txt-index {
         max-width: 100%;
         align-items: center;
@@ -288,17 +375,27 @@ form{
 
     /*formulario*/
 
-    #contactForm{
-        justify-items: center;
+
+
+    /*footer*/
+
+    footer ul {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        list-style-type: none;
+        margin-right: 50px;
+        margin-left: 50px;
+
+        .img-footer {
+            max-width: 10%;
+            padding: 5px;
+        }
     }
 
-    form{
+    a {
+        text-decoration: none;
         color: color(second);
-        align-items: flex-start;
-    }
-
-    .btn{
-        margin-top: 10px;
     }
 
 }
@@ -310,54 +407,56 @@ form{
 
     /*navbar*/
 
-    header{
+    header {
 
-        .navbar{
+        .navbar {
             font-family: $font-s-semibold;
-                    width: 100%;
-                    text-align: center;
-                    background-color: rgb(25, 25, 25);
+            width: 100%;
+            text-align: center;
+            background-color: rgb(25, 25, 25);
         }
-        
-            .nav-item .nav-link {
-                color: color(second);
-                display: block;
-                text-decoration: none;
-                font-size: 15px;
-                margin-left: 25px;
-                margin-right: 25px;
-                letter-spacing: .2em;
-            }
-        
-            .img-logo {
-                max-width: 1.5rem;
-            }
-        
-            .img-logo2 {
-                max-width: 2.5rem;
-                margin-left: 5px;
-                margin-right: 5px;
-            }
-        
-        
+
+        .nav-item .nav-link {
+            color: color(second);
+            display: block;
+            text-decoration: none;
+            font-size: 15px;
+            margin-left: 25px;
+            margin-right: 25px;
+            letter-spacing: .2em;
         }
+
+        .img-logo {
+            max-width: 1.5rem;
+        }
+
+        .img-logo2 {
+            max-width: 2.5rem;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+
+    }
 
 
     /*titulos y txt*/
 
-    .titulo h1 {
-        font-family: $font-title;
-        color: color(second);
-        text-align: center;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        font-size: 10rem;
-        letter-spacing: 4px;
-    }
+    .titulo {
+        h1 {
+            font-family: $font-title;
+            color: color(second);
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 10rem;
+            letter-spacing: 4px;
 
-    .titulo h1:hover {
-        color: color(thrid);
-        transition: .8s;
+            &:hover {
+                color: color(thrid);
+                transition: .8s;
+            }
+        }
     }
 
     .subtitulo {
@@ -390,14 +489,16 @@ form{
         margin-bottom: 20px;
     }
 
-    .pregunta h5 {
-        font-family: $font-title;
-        font-size: 1.8rem;
-        letter-spacing: 5px;
-        text-align: center;
-        color: color(second);
-        padding-top: 20px;
-        padding-bottom: 10px;
+    .pregunta {
+        h5 {
+            font-family: $font-title;
+            font-size: 1.8rem;
+            letter-spacing: 5px;
+            text-align: center;
+            color: color(second);
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
     }
 
     .respuesta {
@@ -406,18 +507,22 @@ form{
         text-align: center;
         margin-left: 500px;
         margin-right: 500px;
+
+        li {
+            list-style: none;
+        }
     }
 
-    .respuesta li {
-        list-style: none;
-    }
-
-    .contactame{
+    .contactame {
         font-family: $font-title;
         font-size: 3rem;
         color: color(second);
         letter-spacing: .5rem;
         text-align: center;
+    }
+
+    .text-ubi {
+        color: color(second);
     }
 
     /*imagen INDEX*/
@@ -434,44 +539,134 @@ form{
         margin-bottom: 1.5rem;
     }
 
-    .rowimg img{
-        max-width: 100%;
-        opacity: .2;
-        transition: opacity .5s;
+    .rowimg {
+        img {
+            max-width: 100%;
+            opacity: .2;
+            transition: opacity .5s;
+        }
     }
 
-    .row img {
-        transition: opacity .5s ease-in-out;
-    }
+    .row {
+        img {
+            transition: opacity .5s ease-in-out;
 
-    .row img:hover {
-        opacity: 1;
+            &:hover {
+                opacity: 1;
+            }
+        }
     }
 
     /*imagenes TRABAJOS*/
 
-    .carousel-item{
+    .carousel-item {
         align-items: center;
     }
 
     /*formulario*/
 
-    #contactForm{
-        justify-items: center;
-    }
-
-    form{
+    .contact-in {
+        width: 80%;
+        align-items: center;
+        height: auto;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px 0px color(fourth);
+        background: color(first);
+        font-family: $font-title;
         color: color(second);
-        align-items: flex-start;
+        letter-spacing: 10px;
+        font-size: 2em;
     }
 
-    .btn{
-        margin-top: 10px;
+    .contact-map {
+        width: 100%;
+        height: auto;
+        flex: 40%;
+        border-radius: 15px;
     }
 
-    footer {
-        margin-top: 25px;
+    .contact-map iframe {
+        width: 100%;
+        height: 100%;
     }
 
+    .contact-form {
+        width: 100%;
+        height: auto;
+        flex: 50%;
+        padding: 30px;
+        text-align: center;
+    }
 
+    .contact-form h1 {
+        margin-bottom: 10px;
+    }
+
+    .contact-form-txt {
+        width: 100%;
+        height: 40px;
+        color: color(first);
+        border: 1px solid color(fourth);
+        border-radius: 50px;
+        outline: none;
+        margin-bottom: 20px;
+        padding: 15px;
+        font-size: .8rem;
+    }
+
+    .contact-form-txtarea {
+        width: 100%;
+        height: 130px;
+        color: color(first);
+        border: 1px solid color(fourth);
+        border-radius: 20px;
+        outline: none;
+        margin-bottom: 20px;
+        padding: 15px;
+        font-family: $font-s;
+        font-size: .8rem;
+    }
+
+    .contact-form-txt::placeholder {
+        font-family: $font-s;
+    }
+
+    .contact-form-btn {
+        font-family: $font-s;
+        font-weight: bold;
+        letter-spacing: 5px;
+        width: 100%;
+        border: none;
+        outline: none;
+        border-radius: 50px;
+        background-color: color(thrid);
+        color: color(second);
+        padding: 10px 0;
+        font-size: 18px;
+    }
+
+    /*footer*/
+
+    footer ul {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        list-style-type: none;
+        margin-right: 50px;
+        margin-left: 50px;
+
+        .img-footer {
+            max-width: 10%;
+            padding: 5px;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: color(second);
+    }
 }

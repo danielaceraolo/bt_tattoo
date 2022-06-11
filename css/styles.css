@@ -33,7 +33,7 @@ body {
   color: white;
   font-size: 1.8em;
   text-align: center;
-  margin: 25px;
+  margin: 10px;
   letter-spacing: 0.1em; }
 
 .subtitulo {
@@ -87,15 +87,19 @@ body {
   text-align: center; }
 
 /* texto e imagen INDEX */
-.img-txt {
+.img-index {
+  display: flex;
   text-align: center;
   max-width: 100%; }
 
 .txt-index {
   align-items: center;
-  padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
   font-family: "Source Sans Pro", cursive;
-  color: white; }
+  color: white;
+  letter-spacing: 1px;
+  font-size: 1.1rem; }
 
 /*imagenes ESTUDIO */
 .img-estudio {
@@ -107,24 +111,95 @@ body {
   max-width: 100%; }
 
 /* formulario */
-#contactForm {
-  justify-items: center; }
-
-form {
+.contact-in {
+  width: 80%;
+  align-items: center;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 0px #2f2f2f;
+  background: black;
+  font-family: "Bebas Neue", cursive;
   color: white;
-  align-items: flex-start; }
+  letter-spacing: 10px;
+  font-size: 2em; }
 
-.btn {
-  margin-top: 10px; }
+.contact-map {
+  width: 100%;
+  height: auto;
+  flex: 40%;
+  border-radius: 15px; }
+
+.contact-map iframe {
+  width: 100%;
+  height: 100%; }
+
+.contact-form {
+  width: 100%;
+  height: auto;
+  flex: 50%;
+  padding: 30px;
+  text-align: center; }
+
+.contact-form h1 {
+  margin-bottom: 10px; }
+
+.contact-form-txt {
+  width: 100%;
+  height: 40px;
+  color: black;
+  border: 1px solid #2f2f2f;
+  border-radius: 50px;
+  outline: none;
+  margin-bottom: 20px;
+  padding: 15px;
+  font-size: .8rem; }
+
+.contact-form-txtarea {
+  width: 100%;
+  height: 130px;
+  color: black;
+  border: 1px solid #2f2f2f;
+  border-radius: 20px;
+  outline: none;
+  margin-bottom: 20px;
+  padding: 15px;
+  font-family: "Source Sans Pro", cursive;
+  font-size: .8rem; }
+
+.contact-form-txt::placeholder {
+  font-family: "Source Sans Pro", cursive; }
+
+.contact-form-btn {
+  font-family: "Source Sans Pro", cursive;
+  font-weight: bold;
+  letter-spacing: 5px;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  background-color: red;
+  color: white;
+  padding: 10px 0;
+  font-size: 18px; }
 
 /*footer*/
-.img-footer {
-  width: 50px;
-  height: 50px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px; }
+footer ul {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  list-style-type: none;
+  padding: auto; }
+  footer ul .img-footer {
+    max-width: 10%; }
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.8rem; }
 
 /* tablet */
 @media screen and (min-width: 768px) {
@@ -206,13 +281,20 @@ form {
     margin: 100px;
     max-width: 100%; }
   /*formulario*/
-  #contactForm {
-    justify-items: center; }
-  form {
-    color: white;
-    align-items: flex-start; }
-  .btn {
-    margin-top: 10px; } }
+  /*footer*/
+  footer ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    list-style-type: none;
+    margin-right: 50px;
+    margin-left: 50px; }
+    footer ul .img-footer {
+      max-width: 10%;
+      padding: 5px; }
+  a {
+    text-decoration: none;
+    color: white; } }
 
 /*desktop*/
 @media (min-width: 992px) {
@@ -245,9 +327,9 @@ form {
     padding-bottom: 10px;
     font-size: 10rem;
     letter-spacing: 4px; }
-  .titulo h1:hover {
-    color: red;
-    transition: .8s; }
+    .titulo h1:hover {
+      color: red;
+      transition: .8s; }
   .subtitulo {
     font-family: "Source Sans Pro ExtraLight", sans-serif;
     color: white;
@@ -284,14 +366,16 @@ form {
     text-align: center;
     margin-left: 500px;
     margin-right: 500px; }
-  .respuesta li {
-    list-style: none; }
+    .respuesta li {
+      list-style: none; }
   .contactame {
     font-family: "Bebas Neue", cursive;
     font-size: 3rem;
     color: white;
     letter-spacing: .5rem;
     text-align: center; }
+  .text-ubi {
+    color: white; }
   /*imagen INDEX*/
   .txt-index {
     color: white;
@@ -306,18 +390,89 @@ form {
     transition: opacity .5s; }
   .row img {
     transition: opacity .5s ease-in-out; }
-  .row img:hover {
-    opacity: 1; }
+    .row img:hover {
+      opacity: 1; }
   /*imagenes TRABAJOS*/
   .carousel-item {
     align-items: center; }
   /*formulario*/
-  #contactForm {
-    justify-items: center; }
-  form {
+  .contact-in {
+    width: 80%;
+    align-items: center;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px #2f2f2f;
+    background: black;
+    font-family: "Bebas Neue", cursive;
     color: white;
-    align-items: flex-start; }
-  .btn {
-    margin-top: 10px; }
-  footer {
-    margin-top: 25px; } }
+    letter-spacing: 10px;
+    font-size: 2em; }
+  .contact-map {
+    width: 100%;
+    height: auto;
+    flex: 40%;
+    border-radius: 15px; }
+  .contact-map iframe {
+    width: 100%;
+    height: 100%; }
+  .contact-form {
+    width: 100%;
+    height: auto;
+    flex: 50%;
+    padding: 30px;
+    text-align: center; }
+  .contact-form h1 {
+    margin-bottom: 10px; }
+  .contact-form-txt {
+    width: 100%;
+    height: 40px;
+    color: black;
+    border: 1px solid #2f2f2f;
+    border-radius: 50px;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: .8rem; }
+  .contact-form-txtarea {
+    width: 100%;
+    height: 130px;
+    color: black;
+    border: 1px solid #2f2f2f;
+    border-radius: 20px;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 15px;
+    font-family: "Source Sans Pro", cursive;
+    font-size: .8rem; }
+  .contact-form-txt::placeholder {
+    font-family: "Source Sans Pro", cursive; }
+  .contact-form-btn {
+    font-family: "Source Sans Pro", cursive;
+    font-weight: bold;
+    letter-spacing: 5px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    background-color: red;
+    color: white;
+    padding: 10px 0;
+    font-size: 18px; }
+  /*footer*/
+  footer ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    list-style-type: none;
+    margin-right: 50px;
+    margin-left: 50px; }
+    footer ul .img-footer {
+      max-width: 10%;
+      padding: 5px; }
+  a {
+    text-decoration: none;
+    color: white; } }

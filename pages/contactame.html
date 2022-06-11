@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boulevard Tattoo</title>
     <link rel="icon" type="icon" href="img/favicon.ico">
+    <!--SEO-->
+    <meta name="description"
+        content="Estudio Privado de Tatuajes ubicado en Provincia de Buenos Aires, Argentina desde 2015">
+    <meta name="keyword" content="tattoo, tatuajes, buenos aires, estudio">
     <!--FUENTES-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,6 +28,7 @@
 
 <body>
     <header>
+
         <nav class="navbar navbar-expand-lg navbar-dark">
             <a class="navbar navbar-brand d-lg-none justify-content-center" href="#"><img class="img-logo"
                     src="/img/logo.png" alt=""></a>
@@ -51,6 +56,7 @@
                     </ul>
                 </div>
         </nav>
+
     </header>
 
     <section class="titulo">
@@ -59,43 +65,36 @@
 
     <main>
 
-        <article>
-            <h3 class="contactame">CONTÁCTAME</h3>
-        </article>
-
-        <section class="container">
-            <article class="row">
-                <form id="contactForm">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                        <label class="form-label" for="name">Nombre</label>
-                        <input class="form-control" id="name" type="text" placeholder="Escribí tu nombre completo"
-                            data-sb-validations="required" />
-                    </div>
-
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                        <label class="form-label" for="emailAddress">Correo electrónico</label>
-                        <input class="form-control" id="emailAddress" type="email" placeholder="ejemplo@gmail.com"
-                            data-sb-validations="required" />
-                    </div>
-
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                        <label class="form-label" for="message">Escribí tu mensaje</label>
-                        <textarea class="form-control" id="message" type="text" placeholder="Escribí acá"
-                            style="height: 10rem;" data-sb-validations="required"></textarea>
-
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                            <button class="btn btn-primary btn-lg" id="submitButton justify-content-center"
-                                type="submit">Enviar</button>
-                        </div>
-
+        <div class="contact-in">
+            <div class="contact-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26239.52147859348!2d-58.33976371153615!3d-34.70668859768961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a332615471bb17%3A0x416cf3acb3a9b900!2sWilde%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1654969896208!5m2!1ses!2sar"
+                    width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="contact-form">
+                <h1>Contáctame</h1>
+                <form>
+                    <input type="text" placeholder="Nombre Completo" class="contact-form-txt">
+                    <input type="text" placeholder="Corre electrónico" class="contact-form-txt">
+                    <textarea placeholder="Mensaje" class="contact-form-txtarea"></textarea>
+                    <input type="submit" name="Submit" class="contact-form-btn">
                 </form>
-            </article>
-        </section>
+            </div>
+        </div>
+
     </main>
 
-    <footer>
-        <a href="https://www.instagram.com/boulevard.tattoo/" target="blank"><img class="img-footer"
-                src="../img/iglogo.png" alt="instagram_logo"></a>
+    <footer class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 justify-content-center">
+        <ul>
+            <li>
+                <a href="https://www.instagram.com/boulevard.tattoo/"><img class="img-footer" src="../img/iglogo.png"
+                        alt="INSTAGRAM"></a>
+            </li>
+            <li><a href="#"><img class="img-footer" src="../img/ubilogo.png" alt="UBICACIÓN">Buenos Aires,
+                    Argentina</a></li>
+            <li><a href="#"><img class="img-footer" src="../img/copylogo.png" alt="COPY"></a></li>
+        </ul>
     </footer>
     </div>
 
